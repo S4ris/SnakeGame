@@ -26,9 +26,6 @@ class Snake():
             self.segments[seg_num].goto(new_x, new_y)
         self.segments[0].forward(MOVE_DISTANCE)
 
-    def heading(self):
-        pass
-
     def up(self):
         if self.segments[0].heading() != 270:
             self.segments[0].seth(90)
